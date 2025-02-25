@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = 'erchid-trust-portal'
-        DOCKER_CONTAINER = 'erchid-trust-portal'
+        DOCKER_IMAGE = 'omnient-studios'
+        DOCKER_CONTAINER = 'omnient-studios'
         CONTAINER_PORT = '3000'
-        HOST_PORT = '3001'
+        HOST_PORT = '3002'
         LOG_MAX_SIZE = '10m'
         LOG_MAX_FILE = '3'
 
-        SUPABASE_SERVICE_KEY = credentials('erchid-trust-portal-supabase-service-key')
-        NEXT_PUBLIC_SUPABASE_ANON_KEY = credentials('erchid-trust-portal-supabase-anon-key')
-        NEXT_PUBLIC_SUPABASE_URL = credentials('erchid-trust-portal-supabase-url')
+        // SUPABASE_SERVICE_KEY = credentials('omnient-studios-supabase-service-key')
+        // NEXT_PUBLIC_SUPABASE_ANON_KEY = credentials('omnient-studios-supabase-anon-key')
+        // NEXT_PUBLIC_SUPABASE_URL = credentials('omnient-studios-supabase-url')
     }
 
     stages {
@@ -88,9 +88,6 @@ pipeline {
                             --log-driver json-file \
                             --log-opt max-size=${LOG_MAX_SIZE} \
                             --log-opt max-file=${LOG_MAX_FILE} \
-                            -e SUPABASE_SERVICE_KEY=${SUPABASE_SERVICE_KEY} \
-                            -e NEXT_PUBLIC_SUPABASE_ANON_KEY=${NEXT_PUBLIC_SUPABASE_ANON_KEY} \
-                            -e NEXT_PUBLIC_SUPABASE_URL=${NEXT_PUBLIC_SUPABASE_URL} \
                             ${DOCKER_IMAGE}:latest
                     """
                 }

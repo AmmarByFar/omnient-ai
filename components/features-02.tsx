@@ -1,129 +1,101 @@
-import Image from "next/image";
-import Particles from "./particles";
-import Highlighter, { HighlighterItem } from "./highlighter";
+import Image from 'next/image';
+import Particles from './particles';
+import Highlighter, { HighlighterItem } from './highlighter';
 
-import FeatureImg01 from "@/public/images/feature-image-01.png";
-import FeatureImg02 from "@/public/images/feature-image-02.png";
-import FeatureImg03 from "@/public/images/feature-image-03.png";
+import FeatureImg01 from '@/public/images/feature-image-01.png';
+import FeatureImg02 from '@/public/images/feature-image-02.png';
+import FeatureImg03 from '@/public/images/feature-image-03.png';
 
 export default function Features02() {
   return (
-    <section className="relative">
+    <section className='relative'>
       {/* Particles animation */}
-      <div className="absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-24 -ml-32">
-        <Particles
-          className="absolute inset-0 -z-10"
-          quantity={6}
-          staticity={30}
-        />
+      <div className='absolute left-1/2 -translate-x-1/2 top-0 -z-10 w-80 h-80 -mt-24 -ml-32'>
+        <Particles className='absolute inset-0 -z-10' quantity={6} staticity={30} />
       </div>
 
-      <div className="max-w-6xl mx-auto px-4 sm:px-6">
-        <div className="pt-16 md:pt-32">
+      <div className='max-w-6xl mx-auto px-4 sm:px-6'>
+        <div className='pt-16 md:pt-32'>
           {/* Section header */}
-          <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">
+          <div className='max-w-3xl mx-auto text-center pb-12 md:pb-20'>
+            <h2 className='h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4'>
               Our Core Services
             </h2>
-            <p className="text-lg text-slate-400">
-              We combine technical expertise with creative excellence to deliver
-              comprehensive digital solutions that drive real business value.
+            <p className='text-lg text-slate-400'>
+              We combine technical expertise with creative excellence to deliver comprehensive digital
+              solutions that drive real business value.
             </p>
           </div>
 
           {/* Highlighted boxes */}
-          <div className="relative pb-12 md:pb-20">
+          <div className='relative pb-12 md:pb-20'>
             {/* Blurred shape */}
             <div
-              className="absolute bottom-0 -mb-20 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none"
-              aria-hidden="true"
+              className='absolute bottom-0 -mb-20 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none'
+              aria-hidden='true'
             >
-              <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
+              <svg xmlns='http://www.w3.org/2000/svg' width='434' height='427'>
                 <defs>
-                  <linearGradient
-                    id="bs2-a"
-                    x1="19.609%"
-                    x2="50%"
-                    y1="14.544%"
-                    y2="100%"
-                  >
-                    <stop offset="0%" stopColor="#6366F1" />
-                    <stop offset="100%" stopColor="#6366F1" stopOpacity="0" />
+                  <linearGradient id='bs2-a' x1='19.609%' x2='50%' y1='14.544%' y2='100%'>
+                    <stop offset='0%' stopColor='#6366F1' />
+                    <stop offset='100%' stopColor='#6366F1' stopOpacity='0' />
                   </linearGradient>
                 </defs>
                 <path
-                  fill="url(#bs2-a)"
-                  fillRule="evenodd"
-                  d="m346 898 461 369-284 58z"
-                  transform="translate(-346 -898)"
+                  fill='url(#bs2-a)'
+                  fillRule='evenodd'
+                  d='m346 898 461 369-284 58z'
+                  transform='translate(-346 -898)'
                 />
               </svg>
             </div>
             {/* Grid */}
-            <Highlighter className="grid md:grid-cols-12 gap-6 group">
+            <Highlighter className='grid md:grid-cols-12 gap-6 group'>
               {/* Box #1 - Web Development */}
-              <div className="md:col-span-12" data-aos="fade-down">
+              <div className='md:col-span-12' data-aos='fade-down'>
                 <HighlighterItem>
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    <div className="flex flex-col md:flex-row md:items-center md:justify-between">
+                  <div className='relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden'>
+                    <div className='flex flex-col md:flex-row md:items-center md:justify-between'>
                       {/* Blurred shape */}
-                      <div
-                        className="absolute right-0 top-0 blur-2xl"
-                        aria-hidden="true"
-                      >
-                        <svg
-                          xmlns="http://www.w3.org/2000/svg"
-                          width="342"
-                          height="393"
-                        >
+                      <div className='absolute right-0 top-0 blur-2xl' aria-hidden='true'>
+                        <svg xmlns='http://www.w3.org/2000/svg' width='342' height='393'>
                           <defs>
-                            <linearGradient
-                              id="bs-a"
-                              x1="19.609%"
-                              x2="50%"
-                              y1="14.544%"
-                              y2="100%"
-                            >
-                              <stop offset="0%" stopColor="#6366F1" />
-                              <stop
-                                offset="100%"
-                                stopColor="#6366F1"
-                                stopOpacity="0"
-                              />
+                            <linearGradient id='bs-a' x1='19.609%' x2='50%' y1='14.544%' y2='100%'>
+                              <stop offset='0%' stopColor='#6366F1' />
+                              <stop offset='100%' stopColor='#6366F1' stopOpacity='0' />
                             </linearGradient>
                           </defs>
                           <path
-                            fill="url(#bs-a)"
-                            fillRule="evenodd"
-                            d="m104 .827 461 369-284 58z"
-                            transform="translate(0 -112.827)"
-                            opacity=".7"
+                            fill='url(#bs-a)'
+                            fillRule='evenodd'
+                            d='m104 .827 461 369-284 58z'
+                            transform='translate(0 -112.827)'
+                            opacity='.7'
                           />
                         </svg>
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0">
-                        <div className="mb-5">
+                      <div className='md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8 md:pr-0'>
+                        <div className='mb-5'>
                           <div>
-                            <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
+                            <h3 className='inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1'>
                               Advanced Web Development
                             </h3>
-                            <p className="text-slate-400">
-                              Building cutting-edge web applications using
-                              Next.js and modern web technologies. We create
-                              responsive, performant, and scalable solutions
-                              that provide exceptional user experiences.
+                            <p className='text-slate-400'>
+                              Building cutting-edge web applications using Next.js and modern web
+                              technologies. We create responsive, performant, and scalable solutions that
+                              provide exceptional user experiences.
                             </p>
                           </div>
                         </div>
                         <div>
                           <a
-                            className="btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none"
-                            href="#0"
+                            className='btn-sm text-slate-300 hover:text-white transition duration-150 ease-in-out group [background:linear-gradient(theme(colors.slate.900),_theme(colors.slate.900))_padding-box,_conic-gradient(theme(colors.slate.400),_theme(colors.slate.700)_25%,_theme(colors.slate.700)_75%,_theme(colors.slate.400)_100%)_border-box] relative before:absolute before:inset-0 before:bg-slate-800/30 before:rounded-full before:pointer-events-none'
+                            href='#0'
                           >
-                            <span className="relative inline-flex items-center">
-                              View Projects{" "}
-                              <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">
+                            <span className='relative inline-flex items-center'>
+                              View Projects{' '}
+                              <span className='tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1'>
                                 -&gt;
                               </span>
                             </span>
@@ -131,13 +103,13 @@ export default function Features02() {
                         </div>
                       </div>
                       {/* Image */}
-                      <div className="relative w-full h-64 md:h-auto overflow-hidden">
+                      <div className='relative w-full h-64 md:h-auto overflow-hidden'>
                         <Image
-                          className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:relative md:left-0{md}transla{}-x-0"
+                          className='absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:relative md:left-0{md}transla{}-x-0'
                           src={FeatureImg01}
-                          width="504"
-                          height="400"
-                          alt="Web Development"
+                          width='504'
+                          height='400'
+                          alt='Web Development'
                         />
                       </div>
                     </div>
@@ -145,39 +117,37 @@ export default function Features02() {
                 </HighlighterItem>
               </div>
               {/* Box #2 - AI & Machine Learning */}
-              <div className="md:col-span-7" data-aos="fade-down">
+              <div className='md:col-span-7' data-aos='fade-down'>
                 <HighlighterItem>
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    <div className="flex flex-col">
+                  <div className='relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden'>
+                    <div className='flex flex-col'>
                       {/* Radial gradient */}
                       <div
-                        className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
-                        aria-hidden="true"
+                        className='absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square'
+                        aria-hidden='true'
                       >
-                        <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]" />
+                        <div className='absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]' />
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                      <div className='md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8'>
                         <div>
-                          <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
+                          <h3 className='inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1'>
                             AI & Machine Learning
                           </h3>
-                          <p className="text-slate-400">
-                            Custom AI solutions including RAG systems,
-                            fine-tuned models, and intelligent automation. We
-                            help businesses leverage AI to enhance operations
-                            and create value.
+                          <p className='text-slate-400'>
+                            Custom AI solutions including RAG systems, fine-tuned models, and intelligent
+                            automation. We help businesses leverage AI to enhance operations and create value.
                           </p>
                         </div>
                       </div>
                       {/* Image */}
-                      <div className="relative w-full h-64 md:h-auto overflow-hidden md:pb-8">
+                      <div className='relative w-full h-64 md:h-auto overflow-hidden md:pb-8'>
                         <Image
-                          className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0"
+                          className='absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0'
                           src={FeatureImg02}
                           width={536}
                           height={230}
-                          alt="AI & Machine Learning"
+                          alt='AI & Machine Learning'
                         />
                       </div>
                     </div>
@@ -185,38 +155,37 @@ export default function Features02() {
                 </HighlighterItem>
               </div>
               {/* Box #3 - Motion Design */}
-              <div className="md:col-span-5" data-aos="fade-down">
+              <div className='md:col-span-5' data-aos='fade-down'>
                 <HighlighterItem>
-                  <div className="relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden">
-                    <div className="flex flex-col">
+                  <div className='relative h-full bg-slate-900 rounded-[inherit] z-20 overflow-hidden'>
+                    <div className='flex flex-col'>
                       {/* Radial gradient */}
                       <div
-                        className="absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square"
-                        aria-hidden="true"
+                        className='absolute bottom-0 translate-y-1/2 left-1/2 -translate-x-1/2 pointer-events-none -z-10 w-1/2 aspect-square'
+                        aria-hidden='true'
                       >
-                        <div className="absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]" />
+                        <div className='absolute inset-0 translate-z-0 bg-slate-800 rounded-full blur-[80px]' />
                       </div>
                       {/* Text */}
-                      <div className="md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8">
+                      <div className='md:max-w-[480px] shrink-0 order-1 md:order-none p-6 pt-0 md:p-8'>
                         <div>
-                          <h3 className="inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1">
+                          <h3 className='inline-flex text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-1'>
                             Motion Design
                           </h3>
-                          <p className="text-slate-400">
-                            High-end motion design and animation for educational
-                            content, infographics, and character animation that
-                            brings your story to life.
+                          <p className='text-slate-400'>
+                            High-end motion design and animation for educational content, infographics, and
+                            character animation that brings your story to life.
                           </p>
                         </div>
                       </div>
                       {/* Image */}
-                      <div className="relative w-full h-64 md:h-auto overflow-hidden md:pb-8">
+                      <div className='relative w-full h-64 md:h-auto overflow-hidden md:pb-8'>
                         <Image
-                          className="absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0"
+                          className='absolute bottom-0 left-1/2 -translate-x-1/2 mx-auto max-w-none md:max-w-full md:relative md:left-0 md:translate-x-0'
                           src={FeatureImg03}
                           width={230}
                           height={230}
-                          alt="Motion Design"
+                          alt='Motion Design'
                         />
                       </div>
                     </div>
@@ -227,65 +196,56 @@ export default function Features02() {
           </div>
 
           {/* Features list */}
-          <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+          <div className='grid md:grid-cols-3 gap-8 md:gap-12'>
             {/* Web Development Features */}
             <div>
-              <div className="flex items-center space-x-2 mb-1">
+              <div className='flex items-center space-x-2 mb-1'>
                 <svg
-                  className="shrink-0 fill-slate-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  className='shrink-0 fill-slate-300'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='16'
+                  height='16'
                 >
-                  <path d="M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778l5.904 5.762a1 1 0 0 0 1.4 0l5.915-5.77a4.733 4.733 0 0 0-6.615-6.77Zm5.208 5.348-5.208 5.079-5.2-5.07a2.734 2.734 0 0 1 3.867-3.864c.182.19.335.404.455.638a1.04 1.04 0 0 0 1.756 0 2.724 2.724 0 0 1 5.122 1.294 2.7 2.7 0 0 1-.792 1.923Z" />
+                  <path d='M7.999 2.34a4.733 4.733 0 0 0-6.604 6.778l5.904 5.762a1 1 0 0 0 1.4 0l5.915-5.77a4.733 4.733 0 0 0-6.615-6.77Zm5.208 5.348-5.208 5.079-5.2-5.07a2.734 2.734 0 0 1 3.867-3.864c.182.19.335.404.455.638a1.04 1.04 0 0 0 1.756 0 2.724 2.724 0 0 1 5.122 1.294 2.7 2.7 0 0 1-.792 1.923Z' />
                 </svg>
-                <h4 className="font-medium text-slate-50">
-                  Next.js Development
-                </h4>
+                <h4 className='font-medium text-slate-50'>Next.js Development</h4>
               </div>
-              <p className="text-sm text-slate-400">
-                Building modern web applications with server-side rendering and
-                optimal performance.
+              <p className='text-sm text-slate-400'>
+                Building modern web applications with server-side rendering and optimal performance.
               </p>
             </div>
             {/* AI Features */}
             <div>
-              <div className="flex items-center space-x-2 mb-1">
+              <div className='flex items-center space-x-2 mb-1'>
                 <svg
-                  className="shrink-0 fill-slate-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  className='shrink-0 fill-slate-300'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='16'
+                  height='16'
                 >
-                  <path d="M11 0c1.3 0 2.6.5 3.5 1.5 1 .9 1.5 2.2 1.5 3.5 0 1.3-.5 2.6-1.4 3.5l-1.2 1.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l1.1-1.2c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.2C12 1.7 10 1.7 8.9 2.8L7.7 4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l1.2-1.1C8.4.5 9.7 0 11 0ZM8.3 12c.4-.4 1-.5 1.4-.1.4.4.4 1 0 1.4l-1.2 1.2C7.6 15.5 6.3 16 5 16c-1.3 0-2.6-.5-3.5-1.5C.5 13.6 0 12.3 0 11c0-1.3.5-2.6 1.5-3.5l1.1-1.2c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.9 8.9c-.6.5-.9 1.3-.9 2.1s.3 1.6.9 2.2c1.1 1.1 3.1 1.1 4.2 0L8.3 12Zm1.1-6.8c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4.2 4.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l4.2-4.2Z" />
+                  <path d='M11 0c1.3 0 2.6.5 3.5 1.5 1 .9 1.5 2.2 1.5 3.5 0 1.3-.5 2.6-1.4 3.5l-1.2 1.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l1.1-1.2c.6-.5.9-1.3.9-2.1s-.3-1.6-.9-2.2C12 1.7 10 1.7 8.9 2.8L7.7 4c-.4.4-1 .4-1.4 0-.4-.4-.4-1 0-1.4l1.2-1.1C8.4.5 9.7 0 11 0ZM8.3 12c.4-.4 1-.5 1.4-.1.4.4.4 1 0 1.4l-1.2 1.2C7.6 15.5 6.3 16 5 16c-1.3 0-2.6-.5-3.5-1.5C.5 13.6 0 12.3 0 11c0-1.3.5-2.6 1.5-3.5l1.1-1.2c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4L2.9 8.9c-.6.5-.9 1.3-.9 2.1s.3 1.6.9 2.2c1.1 1.1 3.1 1.1 4.2 0L8.3 12Zm1.1-6.8c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-4.2 4.2c-.2.2-.5.3-.7.3-.2 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l4.2-4.2Z' />
                 </svg>
-                <h4 className="font-medium text-slate-50">
-                  Custom AI Solutions
-                </h4>
+                <h4 className='font-medium text-slate-50'>Custom AI Solutions</h4>
               </div>
-              <p className="text-sm text-slate-400">
-                Developing tailored AI systems with RAG implementation and model
-                fine-tuning.
+              <p className='text-sm text-slate-400'>
+                Developing tailored AI systems with RAG implementation and model fine-tuning.
               </p>
             </div>
             {/* Motion Design Features */}
             <div>
-              <div className="flex items-center space-x-2 mb-1">
+              <div className='flex items-center space-x-2 mb-1'>
                 <svg
-                  className="shrink-0 fill-slate-300"
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
+                  className='shrink-0 fill-slate-300'
+                  xmlns='http://www.w3.org/2000/svg'
+                  width='16'
+                  height='16'
                 >
-                  <path d="M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z" />
+                  <path d='M14.3.3c.4-.4 1-.4 1.4 0 .4.4.4 1 0 1.4l-8 8c-.2.2-.4.3-.7.3-.3 0-.5-.1-.7-.3-.4-.4-.4-1 0-1.4l8-8ZM15 7c.6 0 1 .4 1 1 0 4.4-3.6 8-8 8s-8-3.6-8-8 3.6-8 8-8c.6 0 1 .4 1 1s-.4 1-1 1C4.7 2 2 4.7 2 8s2.7 6 6 6 6-2.7 6-6c0-.6.4-1 1-1Z' />
                 </svg>
-                <h4 className="font-medium text-slate-50">
-                  Creative Animation
-                </h4>
+                <h4 className='font-medium text-slate-50'>Creative Animation</h4>
               </div>
-              <p className="text-sm text-slate-400">
-                Crafting engaging animations that educate and captivate your
-                audience.
+              <p className='text-sm text-slate-400'>
+                Crafting engaging animations that educate and captivate your audience.
               </p>
             </div>
           </div>

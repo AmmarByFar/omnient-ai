@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from 'react'
-import { sendEmail } from './utils/email'
 
 export default function ContactForm() {
   const [formData, setFormData] = useState({
@@ -19,20 +18,26 @@ export default function ContactForm() {
     setErrorMessage('')
 
     try {
-      await sendEmail({
-        to: process.env.NEXT_PUBLIC_CONTACT_EMAIL || 'contact@omniant.studio',
-        from: formData.email,
-        subject: `Contact Form Submission from ${formData.name}${formData.company ? ` (${formData.company})` : ''}`,
-        message: `Name: ${formData.name}\nEmail: ${formData.email}\nCompany: ${formData.company}\n\nMessage:\n${formData.message}`
+      const response = await fetch('/api/email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
       })
 
-      setStatus('success')
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        message: ''
-      })
+      if (response.ok) {
+        setStatus('success')
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: ''
+        })
+      } else {
+        const data = await response.json()
+        throw new Error(data.error || 'Failed to send message')
+      }
     } catch (error) {
       setStatus('error')
       setErrorMessage('Failed to send message. Please try again later.')

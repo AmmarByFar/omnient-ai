@@ -22,10 +22,10 @@ export default function Home() {
       <Features />
       <Features02 />
       <Features03 />
-      <TestimonialsCarousel />
-      <Features04 />
-      <Pricing />
-      <Testimonials />
+      {/* <TestimonialsCarousel /> */}
+      {/* <Features04 /> */}
+      {/* <Pricing /> */}
+      {/* <Testimonials /> */}
       <Cta />
     </>
   )

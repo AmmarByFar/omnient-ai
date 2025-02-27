@@ -33,11 +33,11 @@ export default function Hero() {
               Bridging the gap between technical innovation and visual storytelling through advanced web development, custom AI solutions, and high-end motion design.
             </p>
             <div className="max-w-xs mx-auto sm:max-w-none sm:inline-flex sm:justify-center space-y-4 sm:space-y-0 sm:space-x-4" data-aos="fade-down" data-aos-delay="400">
-              <div>
+              {/* <div>
                 <a className="btn text-slate-900 bg-gradient-to-r from-white/80 via-white to-white/80 hover:bg-white w-full transition duration-150 ease-in-out group" href="#0">
                   View Our Work <span className="tracking-normal text-purple-500 group-hover:translate-x-0.5 transition-transform duration-150 ease-in-out ml-1">-&gt;</span>
                 </a>
-              </div>
+              </div> */}
               {/* <div>
                 <a
                   className="btn text-slate-200 hover:text-white bg-slate-900 bg-opacity-25 hover:bg-opacity-30 w-full transition duration-150 ease-in-out group"

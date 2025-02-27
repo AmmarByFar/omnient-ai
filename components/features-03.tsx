@@ -6,7 +6,6 @@ import FeatureImg04 from '@/public/images/feature-image-04.png'
 export default function Features03() {
   return (
     <section className="relative">
-
       {/* Blurred shape */}
       <div className="absolute top-0 -translate-y-1/4 left-1/2 -translate-x-1/2 blur-2xl opacity-50 pointer-events-none -z-10" aria-hidden="true">
         <svg xmlns="http://www.w3.org/2000/svg" width="434" height="427">
@@ -22,11 +21,10 @@ export default function Features03() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="pt-16 pb-12 md:pt-32 md:pb-20 border-b border-slate-800">
-
           {/* Section header */}
           <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
-            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">More than a login box</h2>
-            <p className="text-lg text-slate-400">There are many variations available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable.</p>
+            <h2 className="h2 bg-clip-text text-transparent bg-gradient-to-r from-slate-200/60 via-slate-200 to-slate-200/60 pb-4">Full-Stack application Development</h2>
+            <p className="text-lg text-slate-400">Creating responsive WebApps that look beautiful on Desktop and Mobile. We also create Progressive Web Apps that integrate themselves like an app.</p>
           </div>
 
           <div className="max-w-3xl mx-auto">
@@ -44,7 +42,6 @@ export default function Features03() {
               </Highlighter>
             </div>
           </div>
-
         </div>
       </div>
     </section>

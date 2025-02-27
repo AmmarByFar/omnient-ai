@@ -8,7 +8,8 @@ pipeline {
         HOST_PORT = '3002'
         LOG_MAX_SIZE = '10m'
         LOG_MAX_FILE = '3'
-
+        MAILGUN_API_KEY = credentials('omniant-studio-mailgun-api-key')
+        MAILGUN_DOMAIN = credentials('omniant-studio-mailgun-domain')
         // SUPABASE_SERVICE_KEY = credentials('omnient-studios-supabase-service-key')
         // NEXT_PUBLIC_SUPABASE_ANON_KEY = credentials('omnient-studios-supabase-anon-key')
         // NEXT_PUBLIC_SUPABASE_URL = credentials('omnient-studios-supabase-url')
@@ -88,6 +89,8 @@ pipeline {
                             --log-driver json-file \
                             --log-opt max-size=${LOG_MAX_SIZE} \
                             --log-opt max-file=${LOG_MAX_FILE} \
+                            -e MAILGUN_API_KEY=${MAILGUN_API_KEY} \
+                            -e MAILGUN_DOMAIN=${MAILGUN_DOMAIN} \
                             ${DOCKER_IMAGE}:latest
                     """
                 }
